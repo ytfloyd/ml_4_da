@@ -1,0 +1,28 @@
+# Core
+duckdb>=1.0
+pandas>=2.2
+numpy>=1.26
+scipy>=1.13
+pyarrow>=15
+
+# Notebooks
+jupyterlab>=4
+ipykernel
+matplotlib>=3.8
+seaborn>=0.13
+
+# Stats / ML
+scikit-learn>=1.4
+statsmodels>=0.14
+lightgbm>=4
+xgboost>=2
+arch>=6                # GARCH
+pymc>=5                # Bayesian (ch 10)
+
+# Backtesting / portfolio
+vectorbt>=0.26
+pyfolio-reloaded>=0.9
+empyrical-reloaded>=0.5
+
+# Deep learning (used in later chapters)
+torch>=2.2
