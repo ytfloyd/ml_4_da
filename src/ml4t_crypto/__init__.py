@@ -17,6 +17,15 @@ from .data import (
     table_range,
 )
 from .quality import data_quality, eligible_universe, universe_quality, QualityReport
+from .features import PER_SYMBOL_FACTORS, compute_factor_panel
+from .evaluation import (
+    forward_returns,
+    factor_ic,
+    factor_ic_at_horizons,
+    factor_turnover,
+    decile_backtest,
+    all_decile_backtests,
+)
 from .universe import (
     # Full-universe (default) helpers
     available_symbols_on,
@@ -59,6 +68,16 @@ __all__ = [
     "load_curated_universe",
     "load_curated_membership",
     "curated_symbols_on",
+    # Factor library
+    "PER_SYMBOL_FACTORS",
+    "compute_factor_panel",
+    # Factor evaluation
+    "forward_returns",
+    "factor_ic",
+    "factor_ic_at_horizons",
+    "factor_turnover",
+    "decile_backtest",
+    "all_decile_backtests",
     # Backtest adapters
     "perf_stats",
     "get_engines",
